@@ -6,7 +6,7 @@
 }
 
 body {
-    margin-left: 15%;
+    margin-left: 11%;
     margin-right: 15%;
 }
 
@@ -83,7 +83,8 @@ body {
     }
 
     .competition-card {
-        width: 80%;
+        width: 80%; /* ขยายให้เหมาะสม */
+        max-width: 400px; /* ป้องกันการกว้างเกินไป */
     }
 }
 
@@ -101,17 +102,20 @@ body {
 
 .competition-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
     gap: 20px;
     margin-top: 30px;
     flex-wrap: wrap;
-}
+}   
 
 .competition-card {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
+    width: 320px; /* ล็อกความกว้าง */
+    min-width: 300px;
+    max-width: 90%; /* ป้องกันการ์ดใหญ่เกิน */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -143,7 +147,6 @@ body {
 .national {
     background: #e74c3c;
 }
-
 
 .jersey-15-regular {
     font-family: "Jersey 15", sans-serif;
